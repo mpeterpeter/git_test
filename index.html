@@ -10,7 +10,23 @@
 
 <body>
     <h1>my first git repo</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error dolores veniam voluptate mollitia perferendis odit, delectus ad iste ratione itaque ea non dolor consequuntur culpa cupiditate sint nulla. Molestiae.</p>
+    <div id="container">
+        <p id="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime error dolores veniam voluptate mollitia perferendis odit, delectus ad iste ratione itaque ea non dolor consequuntur culpa cupiditate sint nulla. Molestiae.</p>
+        <p id="lorem2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quam eaque nam, dolorum repudiandae animi vero totam quasi perferendis recusandae provident, aperiam fugiat accusantium dolor est ratione natus eius nulla!</p>
+    </div>
+    <p id="width"></p>
+    <script>
+        let anzeige = document.querySelector("#width");
+        console.log("Hallo");
+        window.addEventListener("resize", e => {
+            anzeige.textContent = `Width: ${window.innerWidth} Height ${window.innerHeight}`;
+        })
+        window.onload = e => {
+            anzeige.textContent = `Width: ${window.innerWidth} Height ${window.innerHeight}`;
+            console.log(e);
+        }
+    </script>
+
 </body>
 
 </html>

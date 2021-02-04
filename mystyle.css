@@ -2,3 +2,13 @@ h1 {
     font-size: xx-large;
     text-align: center;
 }
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#container>p {
+    padding: 10px;
+    text-align: justify;
+}
